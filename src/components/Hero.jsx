@@ -1,4 +1,5 @@
 import heroPhoto from "../assets/hero-photo.svg";
+import BlurText from "./React-componets/BlurText";
 
 function Hero() {
   return (
@@ -13,10 +14,20 @@ function Hero() {
         {/* Content area */}
         <div className="relative w-full z-10 min-h-[calc(100vh-80px)] flex justify-center items-center h-full max-lg:items-start max-lg:py-60 ">
           <div className="w-full  flex flex-col gap-10   items-center  ">
-            <h1 className="flex flex-col text-[4rem] leading-[1.2] font-bold min-[2560px]:text-[6rem] lg:text-[5rem]  items-center max-sm:text-[35px]">
-              <span className=" text-white ">Fahad Binfare</span>
-              <span className=" text-[#FF6310]">Software Engineer</span>
-            </h1>
+            <BlurText
+              text="Fahad Binfares"
+              delay={130}
+              animateBy="words"
+              direction="top"
+              className="text-[5rem] text-white  leading-[1.2] font-bold min-[2560px]:text-[6rem] lg:text-[5rem]  items-center max-sm:text-[35px]"
+            />
+            <BlurText
+              text="Software Engineer"
+              delay={10}
+              animateBy="words"
+              direction="top"
+              className="text-[5rem] text-[#FF6310]  leading-[1.2] font-bold min-[2560px]:text-[6rem] lg:text-[5rem]  items-center max-sm:text-[35px]"
+            />
             <p
               className="flex
               flex-row
