@@ -26,17 +26,20 @@ function Hero() {
               delay={10}
               animateBy="words"
               direction="top"
-              className="text-[5rem] text-[#FF6310]  leading-[1.2] font-bold min-[2560px]:text-[6rem] lg:text-[5rem]  items-center max-sm:text-[35px]"
+              className="text-[5rem]  text-[#FF6310]  leading-[1.2] font-bold min-[2560px]:text-[6rem] lg:text-[5rem]  items-center max-sm:text-[30px]"
             />
             <p
               className="flex
               flex-row
               justify-center
+              text-center
             text-white
               min-[2560px]:text-[1.5rem]
-              max-sm:text-[9px]
+              max-sm:text-[12px]
+              text-shring
               max-sm:justify-center
-              flex-wrap p-2"
+              flex-wrap p-2
+              text-balance"
             >
               <span>
                 Software engineer in Riyadh. I design and build web products
