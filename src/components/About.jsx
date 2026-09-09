@@ -1,18 +1,18 @@
 export default function About() {
   return (
-    <section className="relative min-h-[844px] w-full bg-[#0F0D0C]">
+    <section className="relative min-h-[920px] w-full bg-[#0F0D0C]">
       {/* Top line */}
       <div className="absolute top-0 left-[60px] h-[120px] w-[2px] bg-[#8A8175]  max-sm:hidden  mt-18" />
 
       {/* Bottom line */}
 
       {/* Section label */}
-      <span className="absolute top-[120px] left-[90px] text-[#FF6310]  max-sm:left-[20px]">
+      <span className="absolute top-[120px] left-[90px]  font-bold text-[#FF6310]  max-sm:left-[20px]">
         01 ABOUT
       </span>
 
       {/* Main Container */}
-      <div className="w-full max-w-[1400px] mx-auto px-10 pt-50">
+      <div className="w-full max-w-[1400px] mx-auto px-5 pt-50">
         {/* Two columns */}
         <div className="grid grid-cols-[1fr_1.4fr] gap-20 max-sm:grid-cols-1">
           {/* Left */}
