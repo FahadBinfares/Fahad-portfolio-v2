@@ -1,3 +1,5 @@
+import adikrImage from "../assets/Adikr-app.png";
+
 export default function Project() {
   return (
     <section
@@ -20,7 +22,7 @@ export default function Project() {
           <a href="https://thikr-app-indol.vercel.app/" target="_blank">
             <img
               className="w-full h-full object-cover  "
-              src="src\assets\Adikr-app.png"
+              src={adikrImage}
               alt="App img"
             />
             '

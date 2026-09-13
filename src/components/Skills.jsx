@@ -1,12 +1,17 @@
 import LogoLoop from "./React-componets/LogoLoop";
+import reactLogo from "../assets/Logos/react.svg";
+import nextdotjsLogo from "../assets/Logos/nextdotjs.svg";
+import javascriptLogo from "../assets/Logos/javascript.svg";
+import nodedotjsLogo from "../assets/Logos/nodedotjs.svg";
+import tailwindcssLogo from "../assets/Logos/tailwindcss.svg";
 
 export default function Skills() {
   const techLogos = [
-    { src: "src/assets/Logos/react.svg", alt: "React" },
-    { src: "src/assets/logos/nextdotjs.svg", alt: "Next.js" },
-    { src: "src/assets/logos/javascript.svg", alt: "JavaScript" },
-    { src: "src/assets/logos/nodedotjs.svg", alt: "Node.js" },
-    { src: "src/assets/logos/tailwindcss.svg", alt: "Tailwind CSS" },
+    { src: reactLogo, alt: "React" },
+    { src: nextdotjsLogo, alt: "Next.js" },
+    { src: javascriptLogo, alt: "JavaScript" },
+    { src: nodedotjsLogo, alt: "Node.js" },
+    { src: tailwindcssLogo, alt: "Tailwind CSS" },
   ];
   const isMobile = window.innerWidth < 640;
 
