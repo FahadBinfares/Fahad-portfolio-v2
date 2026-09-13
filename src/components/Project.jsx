@@ -17,11 +17,14 @@ export default function Project() {
       <div className="flex flex-col gap-15  ">
         {/*App img*/}
         <div className="bg-[#292625] rounded-4xl h-full w-full max-w-200   overflow-hidden mx-auto ">
-          <img
-            className="w-full h-full object-cover  "
-            src="src\assets\Adikr-app.png"
-            alt=""
-          />
+          <a href="https://thikr-app-indol.vercel.app/" target="_blank">
+            <img
+              className="w-full h-full object-cover  "
+              src="src\assets\Adikr-app.png"
+              alt="App img"
+            />
+            '
+          </a>
         </div>
         {/*  first app info continer  */}
         <div className="flex flex-col gap-7 p-3 md:p-0  md:items-center">
@@ -43,14 +46,14 @@ export default function Project() {
         </div>
         <div className="flex justify-between items-end ">
           <a
-            href="https://github.com/FahadBinfares/thikr-app.git"
+            href="https://thikr-app-indol.vercel.app/"
             target="_blank"
             className="text-[#8B817E]"
           >
             View Project →
           </a>
           <a
-            href="https://thikr-app-indol.vercel.app/"
+            href="https://github.com/FahadBinfares/thikr-app.git"
             target="_blank"
             className="text-[#8B817E]"
           >
