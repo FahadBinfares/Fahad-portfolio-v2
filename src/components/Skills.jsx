@@ -11,14 +11,17 @@ export default function Skills() {
   const isMobile = window.innerWidth < 640;
 
   return (
-    <section className="relative min-h-[844px] w-full bg-[#0F0D0C] flex flex-col items-center justify-center gap-40 px-4">
+    <section
+      id="Skills"
+      className="relative min-h-[844px] w-full bg-[#0F0D0C] flex flex-col items-center justify-center gap-40 px-4"
+    >
       <div className="absolute top-0 left-[60px] h-[120px] w-[2px] bg-[#8A8175] max-sm:hidden mt-18 " />
 
       <span className="absolute top-[120px] left-[90px]  font-bold text-[#FF6310] max-sm:left-[20px]">
         02 SKILLS
       </span>
-      <div className="flex items-center justify-between w-[50%] border-b-2 border-[#E3D4BC]/37 max-sm:w-full max-sm:p-5 max-sm:justify-center  max-2xl:justify-center  ">
-        <h1 className="text-[#A8A39A]  font-bold mb-4 text-[30px] md:text-[45px] lg:text-6xl xl:text-7xl  max-sm:text-wrap">
+      <div className="flex items-center justify-between w-[50%] 2xl:border-b-2 border-[#E3D4BC]/37 max-sm:w-full max-sm:p-5 max-sm:justify-center  max-2xl:justify-center  ">
+        <h1 className="text-[#A8A39A]  font-bold mb-4 text-[30px] md:text-[45px]  lg:text-text-[3.5rem] 2xl:text-[3.5rem] xl:text-[3.5rem]  max-sm:text-wrap">
           What I work with
         </h1>
         <p className="text-[#E3D4BC]/37 max-sm:hidden max-2xl:hidden 2xl: ">

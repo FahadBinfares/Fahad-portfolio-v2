@@ -1,6 +1,9 @@
 export default function Experience() {
   return (
-    <section className="relative min-h-211  w-full bg-[#0F0D0C] flex flex-col justify-start items-center gap-30 px-4 pb-22">
+    <section
+      id="Experience"
+      className="relative min-h-211  w-full bg-[#0F0D0C] flex flex-col justify-start items-center gap-30 px-4 pb-22"
+    >
       <div className="p-10">
         <div className="absolute top-0 left-15 h-30  w-0.5 bg-[#8A8175] max-sm:hidden mt-18" />
         {/*Project section*/}
@@ -8,7 +11,7 @@ export default function Experience() {
           04 EXPERIENCE
         </span>
       </div>
-      <h1 className="text-3xl md:text-6xl leading-tight text-[#A8A39A] font-bold text-center">
+      <h1 className="text-3xl md:text-6xl leading-tight 2xl:text-[3.5rem] text-[#A8A39A] font-bold text-center">
         Where I’ve Work
       </h1>
 
@@ -44,7 +47,7 @@ export default function Experience() {
                 <h2 className="text-[12px] md:text-[20px]">Internship</h2>
                 <h2 className="text-[12px] md:text-[20px]">Alinma Bank</h2>
               </div>
-              <p className="text-[6px] flex flex-wrap max-w-[90%] text-[#8B817E] md:text-[12px] ">
+              <p className="text-[6px] flex flex-wrap max-w-[90%] text-[#8B817E] md:text-[12px] lg:text-[1.2rem] ">
                 Completed a cooperative training program in the Platform &
                 VMware Department, where I gained practical experience in
                 enterprise IT infrastructure and virtualization technologies.

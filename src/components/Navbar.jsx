@@ -1,6 +1,7 @@
 import { Menu } from "lucide-react";
 import { X } from "lucide-react";
 import { useState } from "react";
+import { useEffect } from "react";
 
 function NavLink({ href, children }) {
   return (
@@ -18,6 +19,22 @@ function NavLink({ href, children }) {
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
+  function HandelMobileNavbar() {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <>
       {isOpen ? (
@@ -26,11 +43,31 @@ function Navbar() {
             <X color="#fffdfc" onClick={() => setIsOpen(!isOpen)} />
           </button>
           <div className="flex flex-col text-center items-center gap-8  w-full">
-            <MobileNav name="Home" />
-            <MobileNav name="About" />
-            <MobileNav name="Skills" />
-            <MobileNav name="Projects" />
-            <MobileNav name="Contact" />
+            <MobileNav
+              name="Home"
+              id={"#Home"}
+              HandelMobileNavbar={HandelMobileNavbar}
+            />
+            <MobileNav
+              name="About"
+              id={"#About"}
+              HandelMobileNavbar={HandelMobileNavbar}
+            />
+            <MobileNav
+              name="Skills"
+              id={"#Skills"}
+              HandelMobileNavbar={HandelMobileNavbar}
+            />
+            <MobileNav
+              name="Projects"
+              id={"#Project"}
+              HandelMobileNavbar={HandelMobileNavbar}
+            />
+            <MobileNav
+              name="Contact"
+              id={"#Contact"}
+              HandelMobileNavbar={HandelMobileNavbar}
+            />
           </div>
           <div className="w-full px-20">
             <button
@@ -64,18 +101,22 @@ function Navbar() {
               >
                 Fahad Binfares
               </a>
-              <div className="flex gap-12 text-[#C8B79C] text-[16px] h-full text-center   min-[2560px]:text-[2rem] 2xl:text-[1.5rem]  xl:text-[1.5rem] lg:text-[1.1rem] max-lg:hidden">
+              <div className="flex gap-12 text-[#C8B79C] text-[16px] h-full text-center   min-[2560px]:text-[2rem] 2xl:text-[1.3rem]  xl:text-[1.5rem] lg:text-[1.1rem] max-lg:hidden">
                 <NavLink href="/">Home</NavLink>
-                <NavLink href="/">About</NavLink>
-                <NavLink href="/">Skills</NavLink>
-                <NavLink href="/">Projects</NavLink>
-                <NavLink href="/">Experience</NavLink>
-                <NavLink href="/">Contact</NavLink>
+                <NavLink href="#About">About</NavLink>
+                <NavLink href="#Skill">Skills</NavLink>
+                <NavLink href="#Projects">Projects</NavLink>
+                <NavLink href="#Experience">Experience</NavLink>
+                <NavLink href="#Contact">Contact</NavLink>
               </div>
 
-              <button className="bg-[#FF6310]  min-[2560px]:w-50  2xl:w-50 2xl:font-semibold  rounded-[10px] cursor-pointer   min-[2560px]:text-[2rem] 2xl:text-[1.5rem]  lg:text-[1.1rem] xl:h-10 xl:w-30 lg:w-30 lg:h-9 max-lg:hidden">
+              <a
+                href="mailto:fahadalfars100@email.com"
+                target="_blank"
+                className="bg-[#FF6310] flex items-center justify-center  min-[2560px]:w-50  2xl:w-50 2xl:font-semibold  rounded-[10px] cursor-pointer   min-[2560px]:text-[2rem] 2xl:text-[1.5rem]  lg:text-[1.1rem] xl:h-10 xl:w-30 lg:w-30 lg:h-9 max-lg:hidden"
+              >
                 let's Talk
-              </button>
+              </a>
             </div>
           </nav>
         </>
@@ -84,7 +125,7 @@ function Navbar() {
   );
 }
 
-function MobileNav({ name }) {
+function MobileNav({ name, id, HandelMobileNavbar }) {
   return (
     <a
       className="
@@ -98,10 +139,10 @@ function MobileNav({ name }) {
     font-bold
     text-4xl
     text-[#A8A39A]
-  
   "
+      href={id}
+      onClick={HandelMobileNavbar}
     >
-      {" "}
       {name}
     </a>
   );

@@ -10,7 +10,14 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="flex flex-col ">
-      <Navbar />
+      <Navbar
+        About={About}
+        Skills={Skills}
+        Project={Project}
+        Experience={Experience}
+        Contact={Contact}
+        Footer={Footer}
+      />
       <Hero />
       <About />
       <Skills />

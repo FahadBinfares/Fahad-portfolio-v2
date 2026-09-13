@@ -1,6 +1,7 @@
 export default function Project() {
   return (
     <section
+      id="Project"
       className="relative min-h-[844px] w-full bg-[#0F0D0C] flex flex-col justify-center items-center
     ' gap-40 px-4"
     >
@@ -9,15 +10,15 @@ export default function Project() {
       <span className="absolute top-[120px] left-[90px] font-bold text-[#FF6310] max-sm:left-[20px]">
         03 PROJECT
       </span>
-      <h1 className="text-[30px] text-[#A8A39A] font-bold flex justify-center md:text-6xl mt-60 ">
+      <h1 className="text-[30px] text-[#A8A39A] font-bold flex justify-center md:text-6xl mt-60 2xl:text-[3.5rem] ">
         Selected work
       </h1>
       {/*First app continer */}
       <div className="flex flex-col gap-15  ">
         {/*App img*/}
-        <div className="bg-[#292625] rounded-4xl h-[213px] w-full   overflow-hidden mx-auto ">
+        <div className="bg-[#292625] rounded-4xl h-full w-full max-w-200   overflow-hidden mx-auto ">
           <img
-            className="w-full h-full object-cover object-top "
+            className="w-full h-full object-cover  "
             src="src\assets\Adikr-app.png"
             alt=""
           />
@@ -30,8 +31,7 @@ export default function Project() {
           </h2>
           {/*App idea*/}
           <p className="text-[#5D5755] text-[14px] md:text-[20px] ">
-            A daily dhikr companion — offline-first counter, streak history and
-            a quietreading mode.
+            A daily dhikr companion — offline-first counter.
           </p>
           {/*First app tools*/}
           <div className="space-x-4">
@@ -42,10 +42,18 @@ export default function Project() {
           </div>
         </div>
         <div className="flex justify-between items-end ">
-          <a href="/" className="text-[#8B817E]">
+          <a
+            href="https://github.com/FahadBinfares/thikr-app.git"
+            target="_blank"
+            className="text-[#8B817E]"
+          >
             View Project →
           </a>
-          <a href="/" className="text-[#8B817E]">
+          <a
+            href="https://thikr-app-indol.vercel.app/"
+            target="_blank"
+            className="text-[#8B817E]"
+          >
             GitHub →
           </a>
         </div>
@@ -74,7 +82,6 @@ export default function Project() {
           </div>
         </div>
       </div>
-      <div className="h-[1px] w-[100%] bg-[#8A8175] mt-[-50px]  " />
     </section>
   );
 }

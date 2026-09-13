@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="relative min-h-[920px] w-full bg-[#0F0D0C]">
+    <section id="About" className="relative min-h-[920px] w-full bg-[#0F0D0C]">
       {/* Top line */}
       <div className="absolute top-0 left-[60px] h-[120px] w-[2px] bg-[#8A8175]  max-sm:hidden  mt-18" />
 
@@ -14,22 +14,21 @@ export default function About() {
       {/* Main Container */}
       <div className="w-full max-w-[1400px] mx-auto px-5 pt-50">
         {/* Two columns */}
-        <div className="grid grid-cols-[1fr_1.4fr] gap-20 max-sm:grid-cols-1">
+        <div className="grid grid-cols-[1.4fr] text-center gap-20 max-sm:grid-cols-1">
           {/* Left */}
-          <h1 className="flex flex-col text-[40px] font-bold text-[#A8A39A] max-sm:text-[32px]">
+          <h1 className="flex flex-col text-[3.5rem] font-bold text-[#A8A39A] max-sm:text-[1.5rem]">
             Software Engineer
-            <span>On The Way.</span>
           </h1>
 
           {/* Right */}
           <div className="flex flex-col gap-20">
-            <p className="text-[#A8A39A] max-sm:text-[12px]">
+            <p className="text-[#A8A39A] max-sm:text-[12px] lg:text-[1.5rem]">
               I build web software — interfaces, APIs and the connective work in
               between. My interest is in systems that stay readable a year
               later.
             </p>
 
-            <p className="font-inter font-light text-[#E3D4BC]/24 max-sm:text-[12px]">
+            <p className="font-inter font-light text-[#E3D4BC]/24 max-sm:text-[12px] lg:text-[1.5rem]">
               Most of my work sits in JavaScript and React on the front, Node
               and REST services behind it. I care about the parts users feel
               first: how fast a page becomes usable, whether the state is
