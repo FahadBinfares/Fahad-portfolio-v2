@@ -22,7 +22,7 @@ export default function Skills() {
     >
       <div className="absolute top-0 left-[60px] h-[120px] w-[2px] bg-[#8A8175] max-sm:hidden mt-18 " />
 
-      <span className="absolute top-[120px] left-[90px]  font-bold text-[#FF6310] max-sm:left-[20px]">
+      <span className="absolute top-[120px] left-[90px]  font-bold text-(--main-color) max-sm:left-[20px]">
         02 SKILLS
       </span>
       <div className="flex items-center justify-between w-[50%] 2xl:border-b-2 border-[#E3D4BC]/37 max-sm:w-full max-sm:p-5 max-sm:justify-center  max-2xl:justify-center  ">

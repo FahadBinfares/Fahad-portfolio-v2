@@ -7,7 +7,7 @@ export default function Experience() {
       <div className="p-10">
         <div className="absolute top-0 left-15 h-30  w-0.5 bg-[#8A8175] max-sm:hidden mt-18" />
         {/*Project section*/}
-        <span className="absolute top-20 left-22.5 font-bold text-[#FF6310] max-sm:left-5">
+        <span className="absolute top-20 left-22.5 font-bold text-(--main-color) max-sm:left-5">
           04 EXPERIENCE
         </span>
       </div>

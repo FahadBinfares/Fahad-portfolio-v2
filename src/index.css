@@ -30,6 +30,10 @@
   animation: logoPulse 1.5s ease-in-out infinite;
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 @theme inline {
   --font-heading: var(--font-sans);
   --font-sans: "Inter Variable", sans-serif;
@@ -106,6 +110,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --main-color: #4ade80;
 }
 
 .dark {

@@ -7,7 +7,7 @@ function NavLink({ href, children }) {
   return (
     <a
       href={href}
-      className="border-b-2 border-transparent hover:border-[#C7B79F] transition-colors duration-300 h-full flex items-center
+      className="border-b-2 border-transparent hover:border-(--main-color) transition-colors duration-300 h-full flex items-center
      
       "
     >
@@ -38,7 +38,7 @@ function Navbar() {
   return (
     <>
       {isOpen ? (
-        <div className="min-lg:hidden w-full fixed inset-0 bg-[#292625] z-40 flex flex-col gap-30 justify-center items-center">
+        <div className="lg:hidden w-full fixed inset-0 bg-[#111916] z-40 flex flex-col gap-30 justify-center items-center">
           <button className="absolute top-6 right-6">
             <X color="#fffdfc" onClick={() => setIsOpen(!isOpen)} />
           </button>
@@ -71,7 +71,7 @@ function Navbar() {
           </div>
           <div className="w-full px-20">
             <button
-              className="bg-[#FF6310]
+              className="bg-(--main-color)
                 rounded-[10px]
                 px-20 py-5
                 min-[37px]:px-0
@@ -87,25 +87,25 @@ function Navbar() {
       ) : (
         <>
           <Menu
-            className="min-lg:hidden absolute right-3 top-4 "
+            className="lg:hidden absolute right-3 top-4 "
             onClick={() => setIsOpen(!isOpen)}
             size={30}
             color="#ffffff"
           />
 
-          <nav className="bg-[#1E1C1C] shadow-[0_2px_1px_#C7B79F] ">
+          <nav className="bg-[#061006] border-b border-(--main-color) ">
             <div className="max-w-7x1 mx-auto px-6 h-15 flex items-center justify-evenly  2xl:h-20 text-center max-lg:justify-between">
               <a
                 href="/"
-                className="text-2x1  text-[#FF6310] w-fit   min-[2560px]:text-[2rem] 2xl:text-[1.5rem]   xl:text-[1.5rem]  lg:text-[1.1rem] items-center"
+                className="text-2x1  text-(--main-color) w-fit font-bold  min-[2560px]:text-[2rem] 2xl:text-[1.5rem]   xl:text-[1.5rem]  lg:text-[1.1rem] items-center"
               >
                 Fahad Binfares
               </a>
-              <div className="flex gap-12 text-[#C8B79C] text-[16px] h-full text-center   min-[2560px]:text-[2rem] 2xl:text-[1.3rem]  xl:text-[1.5rem] lg:text-[1.1rem] max-lg:hidden">
-                <NavLink href="/">Home</NavLink>
+              <div className="flex gap-12 text-[#A5B9AC] text-[16px] text-center   min-[2560px]:text-[2rem] 2xl:text-[1.3rem]  xl:text-[1.5rem] lg:text-[1.1rem] max-lg:hidden">
+                <NavLink href="#">Home</NavLink>
                 <NavLink href="#About">About</NavLink>
-                <NavLink href="#Skill">Skills</NavLink>
-                <NavLink href="#Projects">Projects</NavLink>
+                <NavLink href="#Skills">Skills</NavLink>
+                <NavLink href="#Project">Projects</NavLink>
                 <NavLink href="#Experience">Experience</NavLink>
                 <NavLink href="#Contact">Contact</NavLink>
               </div>
@@ -113,7 +113,7 @@ function Navbar() {
               <a
                 href="mailto:fahadalfars100@email.com"
                 target="_blank"
-                className="bg-[#FF6310] flex items-center justify-center  min-[2560px]:w-50  2xl:w-50 2xl:font-semibold  rounded-[10px] cursor-pointer   min-[2560px]:text-[2rem] 2xl:text-[1.5rem]  lg:text-[1.1rem] xl:h-10 xl:w-30 lg:w-30 lg:h-9 max-lg:hidden"
+                className="bg-(--main-color) flex items-center justify-center  min-[2560px]:w-50  2xl:w-50 2xl:font-semibold  rounded-[10px] cursor-pointer   min-[2560px]:text-[2rem] 2xl:text-[1.5rem]  lg:text-[1.1rem] xl:h-10 xl:w-30 lg:w-30 lg:h-9 max-lg:hidden"
               >
                 let's Talk
               </a>

@@ -7,7 +7,7 @@ export default function Contact() {
       {/* seection info*/}
       <div className="flex items-center gap-5">
         <div className=" h-30  w-0.5 bg-[#8A8175] max-sm:hidden " />
-        <span className=" font-bold text-[#FF6310]">05 Contact</span>
+        <span className=" font-bold text-(--main-color)">05 Contact</span>
       </div>
 
       <div className="p-[10%] flex flex-col gap-20">
@@ -27,7 +27,7 @@ export default function Contact() {
           <a
             href="mailto:fahadalfars100@email.com"
             target="_blank"
-            className="h-11.25 w-full flex items-center justify-center text-black font bg-[#FF6310] rounded-xl"
+            className="h-11.25 w-full flex items-center justify-center text-black font bg-(--main-color) rounded-xl"
           >
             Email Me
           </a>

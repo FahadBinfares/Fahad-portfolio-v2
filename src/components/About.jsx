@@ -1,13 +1,13 @@
 export default function About() {
   return (
-    <section id="About" className="relative min-h-[920px] w-full bg-[#0F0D0C]">
+    <section id="About" className="relative min-h-[920px] w-full bg-[#0F0D0C] ">
       {/* Top line */}
       <div className="absolute top-0 left-[60px] h-[120px] w-[2px] bg-[#8A8175]  max-sm:hidden  mt-18" />
 
       {/* Bottom line */}
 
       {/* Section label */}
-      <span className="absolute top-[120px] left-[90px]  font-bold text-[#FF6310]  max-sm:left-[20px]">
+      <span className="absolute top-[120px] left-[90px]  font-bold text-(--main-color)  max-sm:left-[20px]">
         01 ABOUT
       </span>
 

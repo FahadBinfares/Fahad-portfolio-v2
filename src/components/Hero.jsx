@@ -9,7 +9,7 @@ function Hero() {
         className="bg-cover bg-center min-h-[calc(100vh-80px)] "
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50  "></div>
+        <div className="absolute inset-0 bg-[#061006]"></div>
 
         {/* Content area */}
         <div className="relative w-full z-10 min-h-[calc(100vh-80px)] flex justify-center items-center h-full max-lg:items-start max-lg:py-60 ">
@@ -20,24 +20,24 @@ function Hero() {
                 delay={130}
                 animateBy="words"
                 direction="top"
-                className="text-[5rem] text-white  leading-[1.2] font-bold min-[2560px]:text-[6rem] lg:text-[5rem]  items-center max-sm:text-[35px]"
+                className="text-[5rem]  text-white  leading-[1.2] font-bold min-[2560px]:text-[6rem] lg:text-[5rem]  items-center max-sm:text-[35px]"
               />
               <BlurText
                 text="Software Engineer"
                 delay={10}
                 animateBy="words"
                 direction="top"
-                className="text-[5rem]  text-[#FF6310]  leading-[1.2] font-bold min-[2560px]:text-[6rem] lg:text-[5rem]  items-center max-sm:text-[30px]"
+                className="text-[5rem]  text-(--main-color) leading-[1.2] font-bold min-[2560px]:text-[6rem] lg:text-[5rem]  items-center max-sm:text-[30px]"
               />
             </div>
             <p
               className="flex
               flex-row
               text-white
-              min-2xl:text-[2.5rem]
-              min-xl:text-[2rem]
-              min-lg:text-[1.5rem]
-              min-md:text-[1.5rem]
+              2xl:text-[2.5rem]
+              xl:text-[2rem]
+              lg:text-[1.5rem]
+              md:text-[1.5rem]
               max-[375px]:text-[rem]
               flex-wrap
               justify-center
@@ -62,9 +62,9 @@ function Hero() {
               <a
                 href="https://github.com/FahadBinfares"
                 target="_blank"
-                className="min-[2560px]:text-[1.5rem] min-[2560px]:w-full inline-flex items-center justify-center bg-[#FF6310] rounded-[10px] px-9 py-4 mx-5 min-2xl:w-fit"
+                className="min-[2560px]:text-[1.5rem] min-[2560px]:w-full inline-flex font-light items-center justify-center bg-(--main-color) rounded-[200px] px-9 py-4 mx-5 2xl:w-fit hover:font-bold"
               >
-                View My Work
+                Explore Projects
               </a>
               <a
                 href="mailto:fahadalfars100@email.com"
@@ -72,11 +72,13 @@ function Hero() {
                 className="
                 min-[2560px]:text-[1.5rem]
                 inline-flex items-center justify-center
+                font-light
               bg-[#1E1E1E]
               text-white
-                rounded-[10px]
+                rounded-[200px]
                 px-9 py-4  mx-5
-                min-2xl:w-fit"
+                2xl:w-fit
+                hover:font-light"
               >
                 Let's Connect
               </a>

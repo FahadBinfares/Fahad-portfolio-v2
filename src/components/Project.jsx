@@ -9,7 +9,7 @@ export default function Project() {
     >
       <div className="absolute top-0 left-[60px] h-[120px] w-[2px] bg-[#8A8175] max-sm:hidden mt-18" />
       {/*Project section*/}
-      <span className="absolute top-[120px] left-[90px] font-bold text-[#FF6310] max-sm:left-[20px]">
+      <span className="absolute top-[120px] left-[90px] font-bold text-(--main-color) max-sm:left-[20px]">
         03 PROJECT
       </span>
       <h1 className="text-[30px] text-[#A8A39A] font-bold flex justify-center md:text-6xl mt-60 2xl:text-[3.5rem] ">
@@ -18,21 +18,20 @@ export default function Project() {
       {/*First app continer */}
       <div className="flex flex-col gap-15  ">
         {/*App img*/}
-        <div className="bg-[#292625] rounded-4xl h-full w-full max-w-200   overflow-hidden mx-auto ">
-          <a href="https://thikr-app-indol.vercel.app/" target="_blank">
+        <div className="bg-[#292625] rounded-4xl h-full w-full max-w-300 overflow-hidden mx-auto flex items-center justify-center">
+          <a href="https://thikr-app-indol.vercel.app/" target="_blank" rel="">
             <img
-              className="w-full h-full object-cover  "
+              className="w-full h-full object-contain"
               src={adikrImage}
-              alt="App img"
+              alt="Thikr App screenshot"
             />
-            '
           </a>
         </div>
         {/*  first app info continer  */}
         <div className="flex flex-col gap-7 p-3 md:p-0  md:items-center">
           {/*App name*/}
           <h2 className="text-white text-[20px] font-bold flex gap-5  md:text-[30px]">
-            <span className="text-[#FF6310]">01</span> Adkar
+            <span className="text-(--main-color)">01</span> Adkar
           </h2>
           {/*App idea*/}
           <p className="text-[#5D5755] text-[14px] md:text-[20px] ">
@@ -64,7 +63,6 @@ export default function Project() {
         </div>
         <div className="h-[1px] w-[100%] bg-[#8A8175] mt-[-50px]  " />
       </div>
-      {/*I need here line to Separating project ✅*/}
 
       {/*Second app continer */}
       <div className="flex flex-col gap-10 mb-8   ">
@@ -76,7 +74,7 @@ export default function Project() {
         {/*App name*/}
         <div className="flex flex-col gap-7 p-3 md:p-0  md:items-center">
           <h2 className="text-white text-[20px] font-bold flex gap-5 md:text-[30px] ">
-            <span className="text-[#FF6310]">02</span> Pending
+            <span className="text-(--main-color)">02</span> Pending
           </h2>
           {/*App idea*/}
           <p className="text-[#5D5755] text-[14px]">In the kitchen</p>
